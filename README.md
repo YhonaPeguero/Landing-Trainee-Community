@@ -13,7 +13,7 @@
 
 ### Screenshot
 
-![](./dist/assests/preview.png)
+![](./dist/assets/preview.png)
 
 ## Proyecto
 
