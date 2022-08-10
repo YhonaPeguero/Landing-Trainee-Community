@@ -1,4 +1,4 @@
-# ANIME APP PROJECT
+# TRAINEE COMMUNITY SITE WEB
 
 ## Tabla de Contenidos
 
