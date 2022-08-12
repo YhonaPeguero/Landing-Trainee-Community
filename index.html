@@ -1,112 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Trainee Community</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/dist/output.css" />
-  <title>Trainee Community</title>
-</head>
+  <body class="dark bg-slate-1000">
+    <main class="min-h-screen bg-[url('./assets/bg-hero.png')] bg-no-repeat">
+      <header class="flex items-center justify-between bg-slate-1100 p-4">
+        <img src="./dist/assets/logo.svg" alt="" />
+        <div class="">
+          <i class="bx bx-menu-alt-right text-4xl text-white"></i>
+        </div>
+      </header>
+      <section class="flex flex-col p-2 pl-6">
+        <img class="w-full" src="./dist/assets/ilustracion.svg" alt="" />
+        <div class="">
+          <span
+            class="bg-gradient-to-r from-red-1000 to-blue-600 bg-clip-text text-3xl font-bold text-transparent"
+            >Bienvenidos a</span
+          >
+          <h1
+            class="mt-3 bg-gradient-to-r from-red-1000 to-blue-600 bg-clip-text pb-2 text-5xl font-extrabold text-transparent"
+          >
+            Trainee Community
+          </h1>
+        </div>
 
-<body class="bg-slate-1000">
-  <main class="min-h-screen bg-[url('./assets/bg-hero.png')]">
-    <header class="flex items-center justify-between bg-slate-1100 p-4">
-      <img src="./dist/assets/logo.svg" alt="" />
-      <div class="">
-        <i class="bx bx-menu-alt-right text-4xl text-white"></i>
-      </div>
-    </header>
-    <section class="flex flex-col p-2 pl-6">
-      <img class="w-full" src="./dist/assets/ilustracion.svg" alt="" />
-      <div class="">
-        <span
-          class="bg-gradient-to-r from-red-1000 to-blue-600 bg-clip-text text-3xl font-bold text-transparent">Bienvenidos
-          a</span>
-        <h1
-          class="mt-3 bg-gradient-to-r from-red-1000 to-blue-600 bg-clip-text pb-2 text-5xl font-extrabold text-transparent">
-          Trainee Community
-        </h1>
-      </div>
-
-      <h3 class="my-4 inline-flex w-max rounded-lg border border-red-1000 px-2 py-[6px] text-base font-bold text-white">
-        Comunidad de tecnología
-      </h3>
-      <p class="text-slate-100">
-        Poder brindar recursos de utilidad para el crecimiento a cualquier
-        profesional en la industria IT, especialmente a los trainee.
-      </p>
-
-      <button type="button"
-        class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none">
-        Nosotros
-      </button>
-    </section>
-
-    <section class="my-8 flex flex-col items-center p-1">
-      <article class="flex flex-col items-center p-3">
-        <img class="mb-3 brightness-75" src="./dist/assets/nosotros.png" alt="" />
-      </article>
-      <article class="flex flex-col items-center p-3">
-        <img class="brightness-75" src="./dist/assets/learn.png" alt="" />
-        <h4 class="mb-2 text-xl font-bold text-white">Aprende</h4>
-        <p class="px-2 text-center text-slate-100">
-          Aprende junto a otros desarrolladores y lleva tus habilidades a un
-          siguiente nivel.
-        </p>
-      </article>
-      <article class="flex flex-col items-center p-3">
-        <img class="brightness-75" src="./dist/assets/create.png" alt="" />
-        <h4 class="mb-2 text-xl font-bold text-white">Crea</h4>
-        <p class="px-2 text-center text-slate-100">
-          Crea ideas que puedas implementar en compañia de otros o de forma
-          individual en la comunidad.
-        </p>
-      </article>
-      <article class="flex flex-col items-center p-3">
-        <img class="brightness-75" src="./dist/assets/share.png" alt="" />
-        <h4 class="mb-2 text-xl font-bold text-white">Comparte</h4>
-        <p class="px-2 text-center text-slate-100">
-          Comparte tus proyectos con otros para recibir feedback y poder
-          seguir mejorando.
-        </p>
-      </article>
-    </section>
-
-    <section class="my-8 flex flex-col items-center gap-8">
-      <img class="" src="./dist/assets/equipo.png" alt="" />
-      <div class="mb-8 flex max-w-[240px] flex-col items-center gap-3 text-center">
-        <img src="./dist/assets/person 1.png" alt="" />
-        <p class="text-xl font-bold text-white">Yhonatan P.</p>
+        <h3
+          class="my-4 inline-flex w-max rounded-lg border border-red-1000 px-2 py-[6px] text-base font-bold text-white"
+        >
+          Comunidad de tecnología
+        </h3>
         <p class="text-slate-100">
-          Desarrollador Web FullStack
+          Poder brindar recursos de utilidad para el crecimiento a cualquier
+          profesional en la industria IT, especialmente a los trainee.
         </p>
-      </div>
-      <div class="mb-8 flex max-w-[240px] flex-col items-center text-center">
-        <img src="./dist/assets/person 2.png" alt="" />
-        <p class="text-xl font-bold text-white">Tomás A.</p>
-        <p class="text-slate-100">
-          Desarrollador Front-end y diseñador UX/UI
-        </p>
-      </div>
-      <div class="mb-8 flex max-w-[240px] flex-col items-center gap-3 text-center">
-        <img src="./dist/assets/person 3.png" alt="" />
-        <p class="text-xl font-bold text-white">Kelvin F.</p>
-        <p class="text-slate-100">
-          Desarrollador web Front-end
-        </p>
-      </div>
-    </section>
 
-    <section class="my-8 flex flex-col items-center">
-      <img src="./dist/assets/ideas.png" alt="" />
-    </section>
-  </main>
-  <script src="./src/app.js"></script>
-</body>
+        <button
+          type="button"
+          class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+        >
+          Nosotros
+        </button>
+      </section>
 
+      <section class="my-8 flex flex-col items-center p-1">
+        <article class="flex flex-col items-center p-3">
+          <img
+            class="mb-3 brightness-75"
+            src="./dist/assets/nosotros.png"
+            alt=""
+          />
+        </article>
+        <article class="flex flex-col items-center p-3">
+          <img class="brightness-75" src="./dist/assets/learn.png" alt="" />
+          <h4 class="mb-2 text-xl font-bold text-white">Aprende</h4>
+          <p class="px-2 text-center text-slate-100">
+            Aprende junto a otros desarrolladores y lleva tus habilidades a un
+            siguiente nivel.
+          </p>
+        </article>
+        <article class="flex flex-col items-center p-3">
+          <img class="brightness-75" src="./dist/assets/create.png" alt="" />
+          <h4 class="mb-2 text-xl font-bold text-white">Crea</h4>
+          <p class="px-2 text-center text-slate-100">
+            Crea ideas que puedas implementar en compañia de otros o de forma
+            individual en la comunidad.
+          </p>
+        </article>
+        <article class="flex flex-col items-center p-3">
+          <img class="brightness-75" src="./dist/assets/share.png" alt="" />
+          <h4 class="mb-2 text-xl font-bold text-white">Comparte</h4>
+          <p class="px-2 text-center text-slate-100">
+            Comparte tus proyectos con otros para recibir feedback y poder
+            seguir mejorando.
+          </p>
+        </article>
+      </section>
+
+      <section class="my-8 flex flex-col items-center gap-8">
+        <img class="" src="./dist/assets/equipo.png" alt="" />
+        <div
+          class="mb-8 flex max-w-[240px] flex-col items-center gap-3 text-center"
+        >
+          <img src="./dist/assets/person 1.png" alt="" />
+          <p class="text-xl font-bold text-white">Yhonatan P.</p>
+          <p class="text-slate-100">Desarrollador Web FullStack</p>
+        </div>
+        <div
+          class="mb-8 flex max-w-[240px] flex-col items-center gap-3 text-center"
+        >
+          <img src="./dist/assets/person 2.png" alt="" />
+          <p class="text-xl font-bold text-white">Tomás A.</p>
+          <p class="text-slate-100">
+            Desarrollador Front-end y diseñador UX/UI
+          </p>
+        </div>
+        <div
+          class="mb-8 flex max-w-[240px] flex-col items-center gap-3 text-center"
+        >
+          <img src="./dist/assets/person 3.png" alt="" />
+          <p class="text-xl font-bold text-white">Kelvin F.</p>
+          <p class="text-slate-100">Desarrollador web Front-end</p>
+        </div>
+      </section>
+
+      <section class="my-8 mx-auto flex max-w-[1250px] flex-col items-center">
+        <img class="" src="./dist/assets/ideas.png" alt="" />
+
+        <div
+          class="mt-12 flex flex-col flex-wrap items-center gap-7 sm:flex-row sm:justify-center md:gap-9"
+        >
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex w-[90%] max-w-sm flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-80 w-full rounded-t-lg object-cover"
+              src="https://jrgarciadev.com/react-iconly.png"
+            />
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-8 mx-auto flex max-w-[1250px] flex-col items-center">
+        <img src="./dist/assets/referencias.png" class="w-full max-w-lg" />
+        <div
+          class="mt-12 flex flex-col flex-wrap items-center gap-7 sm:flex-row sm:justify-center md:gap-9"
+        >
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex max-h-max w-[90%] max-w-xl flex-col items-center rounded-lg bg-white shadow-md shadow-slate-800 dark:bg-slate-900"
+          >
+            <img
+              class="h-52 w-full rounded-t-lg object-cover"
+              src="./dist/assets/logo ob.png"
+            />
+            <div class="flex flex-col justify-between p-3 leading-normal">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Anime App
+              </h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <button
+                type="button"
+                class="mt-4 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex mx-auto flex-col max-w-[1250px] my-5">
+        <div
+          class="flex flex-col gap-5 p-5 md:flex-row md:items-center md:justify-between"
+        >
+          <div>
+            <h2
+              class="mt-3 bg-gradient-to-r from-red-1000 to-blue-600 bg-clip-text pb-2 text-5xl font-extrabold text-transparent"
+            >
+              Trainee Community
+            </h2>
+            <h3
+              class="my-4 inline-flex w-max rounded-lg border border-red-1000 px-2 py-[6px] text-base font-bold text-white"
+            >
+              Comunidad de tecnología
+            </h3>
+          </div>
+
+          <div class="max-w-md">
+            <p class="text-3xl font-bold text-slate-100">
+              ¡Te esperamos en nuestra comunidad de
+              <span class="text-red-1000">Discord!</span>
+            </p>
+
+            <button
+              type="button"
+              class="mt-6 mr-2 mb-2 max-w-[150px] rounded-lg bg-gradient-to-br from-red-1000 to-blue-700 px-3 py-1.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none"
+            >
+              <span
+                class="flex items-center justify-center gap-2 text-2xl font-bold"
+                >Únete
+                <i class="bx bxl-discord-alt pt-1 text-3xl"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="p-3 text-center">
+          <a class="text-sm text-slate-400" href="#">
+            © 2022 Trainee Community™ Design by Tomás E
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script src="./src/app.js"></script>
+  </body>
 </html>
