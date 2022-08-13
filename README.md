@@ -7,7 +7,6 @@
 - [Proceso](#proceso)
   - [Construido con](#construido-con)
   - [Recursos Utilizados](#recursos-utilizados)
-- [Autor](#Autor)
 
 ## Preview
 
@@ -38,12 +37,3 @@ Este proyecto fue realizado con la participación de los integrantes de OpenBoot
 
 - [Tailwind](https://tailwindcss.com/docs/)
 - [MDN Web Docs](https://developer.mozilla.org/es/docs/Web)
-
-## Autor
-
-### OpenBootcamp Community
-
-- Bootcamp - [OpenBootcamp](https://bit.ly/3E5AGBt)
-- Twitter - [@Open_Bootcamp](https://twitter.com/Open_Bootcamp)
-- LinkedIn - [@Open_Bootcamp](https://www.linkedin.com/school/openbootcamp-escuela/)
-- GitHub - [@fabioalcocer](https://github.com/fabioalcocer/)
